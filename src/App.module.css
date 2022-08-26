@@ -1,0 +1,63 @@
+.wrapper {
+  max-width: 70rem;
+  margin: auto;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+.wrapper main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.progress b {
+  color: var(--blue);
+  font-size: 0.875rem;
+}
+
+.progress b + b {
+  color: var(--purple);
+}
+
+.progress span {
+  margin-left: 8px;
+  background: var(--gray-400);
+  border-radius: 999px;
+  padding: 0.135rem 0.5rem;
+  color: var(--white);
+}
+
+.tasksContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.875rem;
+}
+
+.tasksContainerEmpty {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1.5rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87,5%;
+  }
+}
